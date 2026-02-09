@@ -1,10 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-
+import Heelo from './src/components/Hello'
 const App = (): JSX.Element  => {
 
   return (
     <View style={styles.container}>
+      <Heelo bang>World</Heelo>
+      <Heelo style={{fontSize: 16}}>World</Heelo>
       <Text>Open up App.tsx to start working on your app!!</Text>
       <StatusBar style="auto" />
     </View>
